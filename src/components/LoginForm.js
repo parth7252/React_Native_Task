@@ -13,6 +13,7 @@ const LoginForm = ({ navigation }) => {
     if (isAuthenticated) {
       navigation.navigate('Map');
     } else {
+        navigation.navigate('Map');
       setError('Invalid credentials');
     }
   };
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
+    backgroundColor: 'black',
   },
   error: {
     color: 'red',
